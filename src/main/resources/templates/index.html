@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<tr th:each="rhyme: ${gedicht}">
+    <td th:text="${rhyme.start}" />
+    <br/>
+    <td th:text="${rhyme.end}" />
+    <br/>
+    <br/>
+</tr>
+</body>
+</html>
